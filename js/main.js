@@ -48,5 +48,7 @@ addButton.addEventListener("click", function () {
     lastIcon.addEventListener("click", function () {
       boxLi.style.display = "none";
     });
+    // Remove value of input box
+    inputBox.value = "";
   }
 });
