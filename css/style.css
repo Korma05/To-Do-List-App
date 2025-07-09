@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #555;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+
+.todo-app {
+  background: #fff;
+  padding: 40px 30px;
+  margin: 100px auto 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 540px;
+}
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img {
+  width: 25px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+}
+.row input {
+  width: calc(100% - 15px);
+  background-color: #eee;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.row input:focus {
+  outline: none;
+  /* box-shadow: 0 0 5px #4e085f; */
+}
+.row button {
+  width: 100px;
+  padding: 15px;
+  position: absolute;
+  right: 2px;
+  background: #ff5945;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+#list-container {
+  list-style: none;
+  padding-top: 10px;
+}
+#list-container li {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5px 10px 20px;
+}
+#list-container li .one {
+  display: flex;
+  width: 90%;
+  align-items: center;
+}
+
+span {
+  cursor: pointer;
+  position: relative;
+  width: 21px;
+  height: 21px;
+  border: solid #757575 2px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#list-container li .one .fa-check {
+  position: absolute;
+  left: -1.5px;
+  top: -2px;
+  background-color: #ff5945;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  line-height: 1.3;
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+  display: none;
+}
+#list-container li .last {
+  color: #757575;
+}
+
+/* on Checked */
+.checked p {
+  text-decoration: line-through;
+  color: #757575;
+}
+
+#list-container li.checked .fa-check {
+  display: block;
+}
